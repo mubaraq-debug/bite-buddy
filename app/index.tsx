@@ -5,7 +5,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import ButtonFill from "./components/common/button-fill";
 import ButtonTransaparent from "./components/button-transparent";
 import BackIcon from "./components/common/back-icon";
-import RegInput from "./components/common/reg-input";
+import FormInput from "./components/common/form-input";
+
+import { Ionicons } from '@expo/vector-icons';
+import RoundedIcon from "./components/common/rounded-icon";
 
 export default function Index() {
   return (
@@ -13,7 +16,8 @@ export default function Index() {
       <ButtonFill text="order now" />
       <ButtonTransaparent text="skip for now" />
       <BackIcon />
-      <RegInput placeholder="name" />
+      <FormInput label="name" />
+      <RoundedIcon bgColor="bg-black" icon={<Ionicons name="person-outline" size={24} color="white" />} />
     </SafeAreaView>
   );
 }
