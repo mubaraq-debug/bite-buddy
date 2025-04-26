@@ -6,7 +6,7 @@ const SplashScreen = ({navigation}: any) => {
     useEffect(()=>{
         const timer = setTimeout(()=>{
             navigation.replace('Onboarding')
-        }, 3000)
+        }, 4000)
 
         return () => clearTimeout(timer)
     }, [])
